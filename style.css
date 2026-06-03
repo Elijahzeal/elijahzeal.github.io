@@ -1,13 +1,281 @@
+
+My Portfolio
+/
+Claude finished the response
+Uploaded image
+1780404253544_beach_background.jpg
+Build me a professional portfolio page using HTML, CSS, JavaScript and the related appropriate file types. Incorporate 'Elijahzeal' as the heading and my name 'Elliot Holland-Clarke' as a sub-heading underneath on a Hero Page.
+
+This html site will be used to showcase my development portfolio. 
+
+Have a header with the liquid glass styling with heading buttons of 'About', 'Portfolio' and 'Contact'. These options will enable the user viewing the site navigation to other pages. Provide space for these pages but leave them blank for the time being, only replicating the attached JPG file as the background.
+
+The base background image should be the attached JPG file.
+
+Include a footer with liquid glass icons that can be linked to LinkedIn, Instagram, TikTok and Discord.
+
+Mention the 2026 copyright in the footer.
+Have 2 lists linking to each of the pages as well as a Privacy Policy and a References option.
+
+Show more
+
+Loaded tools, created 3 files, ran 2 commands
+Loaded tools, created 3 files, ran 2 commands
+Your portfolio site is ready with 3 files. Here's what's included:
+
+Header — floating liquid glass pill with About, Portfolio, Contact nav buttons
+Hero — your beach background with "Elijahzeal" as the large heading and "Elliot Holland-Clarke" as the subheading, plus a "View My Work" CTA
+Pages — About, Portfolio, Contact, Privacy Policy, and References all created as blank shells, navigable via hash routing
+Footer — liquid glass social icons for LinkedIn, Instagram, TikTok, and Discord (update the URLs in index.html to your profiles), two nav columns, and © 2026 copyright
+Open index.html directly in a browser to preview. When you're ready to fill in the pages, just let me know.
+
+
+C:\Users\Elliot\OneDrive\Documents\Claude Projects\elijahzeal\My Portfolio\My Portfolio\index.html
+Code 
+
+C:\Users\Elliot\OneDrive\Documents\Claude Projects\elijahzeal\My Portfolio\My Portfolio\style.css
+Code 
+
+C:\Users\Elliot\OneDrive\Documents\Claude Projects\elijahzeal\My Portfolio\My Portfolio\main.js
+ 
+With the footer, make it also part of the liquid glass style and have the jpg image run to the bottom of the page.
+
+
+Edited a file
+Edited a file
+Now update the page layout so the background image spans the full viewport including the footer area:
+
+
+Edited a file
+Edited a file
+Now simplify the per-page background so it doesn't duplicate the image (the fixed body bg handles it):
+
+
+Edited a file
+Edited a file
+Make the page sections flex-grow so the footer sits naturally at the bottom with the image continuing behind it:
+
+
+Edited a file
+Edited a file
+Done. The background JPG now sits as a fixed full-page layer via body::before, so it stretches seamlessly behind the footer. The footer itself uses the same liquid glass treatment as the header — frosted blur, white border highlight, and the subtle inner glow. Refresh index.html to see it.
+
+Replicate what happens from the header to the footer when scrolling down. The footer should take on a slightly darker appearance so that the text links, and 'Navigate' & 'More' sections are easier to read. Don't darken it too much though.
+
+
+Edited 2 files
+Edited 2 files
+The footer now starts at a slightly darkened glass base (rgba(8,16,32, 0.38)) — enough to make the text clearly legible without killing the glass look — and progressively deepens to 0.60 opacity as you scroll toward it, mirroring the header's behaviour on the way down. Refresh and scroll to the bottom to see it in action.
+
+On the portfolio section of the site, build in 3 sections that can be edited upon further. Have them as panels that are showcased next to each other, all in the liquid glass styling as well. Make sure their alinement matches up. Make the edges rounded, not pointed. With these panels, include image boxes in the panels to showcase the work with a rounded textbox below that includes some info for them.
+
+
+Read a file, edited a file
+Read a file, edited a file
+Now add the portfolio styles to style.css:
+
+
+Edited a file
+Edited a file
+Also add responsive stacking for smaller screens at the bottom:
+
+
+Edited a file
+Edited a file
+The Portfolio page now has 3 liquid glass panels laid out side-by-side in a grid, each with:
+
+A 16:10 image box at the top with a soft gradient placeholder (swap in real screenshots via <img> tags when ready)
+A rounded info box below with a project title, tech stack tags, description text, and a "View Project" link
+Hover effects — cards lift up slightly and the image subtly scales in
+All three cards are fully aligned. On mobile they stack to a single column. To add a real image, replace the <div class="card-img-placeholder"> with <img src="your-image.jpg" alt="..." /> inside .card-image-box.
+
+With these panels in the portfolio section, darken them like the footer when the cursor hovers over them.
+
+
+Edited a file
+Edited a file
+Cards will now darken to the same dark-tinted glass tone as the footer on hover, while still lifting and keeping the frosted blur effect.
+
+Change the 'EZ' text to 'Elijahzeal' in the header and then when the characters in the header are clicked upon, redirect the user to the home page when at the 'About', 'Portfolio' and 'Contact' pages.
+
+
+Edited a file
+Edited a file
+Now make the logo styled as a link without losing its appearance:
+
+
+Edited a file
+Edited a file
+"Elijahzeal" now appears in the header and clicking it from any page routes back to home.
+
+Within the references page, create 6 panels like what was done on the portfolio page. 3 on the top row and 3 below. Have these panel texts boxes able to expand to 2000 characters in their text boxes for in depth descriptions.
+
+
+Read 3 files, edited a file
+Read 3 files, edited a file
+Now add the styles:
+
+
+Edited a file
+Edited a file
+Finally add responsive stacking for the references grid:
+
+
+Edited a file
+Edited a file
+The References page now has 6 liquid glass panels laid out in two rows of three, matching the portfolio style. Each card has an avatar circle at the top (showing initials as a placeholder) and a text box below with name, role/company, and a description field with no character truncation — it'll comfortably hold up to 2,000 characters and flow naturally. Hover darkens them the same way as the portfolio cards. Just swap in the real names and testimonials when you're ready.
+
+Replace the avatar circle at the top of these panels for images to be inserted.
+
+
+Edited a file
+Edited a file
+Now update the initials to match each card's original placeholders with unique labels, and swap the CSS:
+
+
+Edited a file
+Edited a file
+The avatar circles are replaced with image boxes at a 4:3 ratio — well-suited for portrait photos. Each card has a "Photo" placeholder until you add a real image. To swap one in, replace the placeholder <div> with:
+
+html
+<img src="Assets/your-photo.jpg" alt="Name Surname" />
+Include this html syntax in the code but blocking it out. Have the comments detail how to add the image into the code.
+
+
+Edited a file
+Edited a file
+All 6 panels now have the <img> tag blocked out in a comment with step-by-step instructions on how to swap it in.
+
+The 1st panel on the references page is correct, however this will need to be replicated to all the other. Please do this and update the page.
+
+
+Read a file, edited a file
+Read a file, edited a file
+All 6 reference panels now use the same image box structure with the commented-out <img> instructions. Refresh and they'll all be consistent.
+
+With the portfolio and reference pages, have the panels take on the same blur amount as the footer bar.
+
+
+Edited 2 files
+Edited 2 files
+Both sets of panels now use blur(24px) saturate(200%) — identical to the footer.
+
+Replicate this blur over all the panels on the portfolio page and reference page.
+
+The blur is already applied to .portfolio-card and .ref-card which covers all panels on both pages. Let me check if there are any child elements inside the cards that have their own separate backdrop-filter overriding it.
+
+
+Searched 2 patterns, read 2 files
+Searched 2 patterns, read 2 files
+Both .portfolio-card (line 310) and .ref-card (line 558) are already set to blur(24px) saturate(200%) — exactly the same as the footer. The blur(12px) values on lines 238 and 483 belong to the CTA button and social icons respectively, not the panels.
+
+All panels across both pages are already using the same blur as the footer. If something looks different in the browser, it's likely a rendering difference between overlapping backdrop-filter elements rather than a CSS mismatch — try a hard refresh (Ctrl+Shift+R) to clear any cached styles.
+
+Review those pages again. In the cowork page preview the panels are just passing through the image behind them. I'd like the panels to have the blur effect. It'd then make reading the test easier.
+
+
+Thought process
+Thought process
+The issue is overflow: hidden on the cards is interfering with backdrop-filter — they conflict in how the browser composites layers. The fix is to remove overflow: hidden from the cards and handle clipping on the image boxes directly instead.
+
+
+Read 3 files
+Read 3 files
+Now I have a clear picture. The fix is to remove overflow: hidden from both card types and instead apply rounded corners to the child elements so the card's backdrop-filter isn't suppressed.
+
+
+Edited 2 files
+Edited 2 files
+Now round the top corners of the image boxes and bottom corners of the info boxes so the cards still look fully rounded without needing overflow: hidden on the card itself:
+
+
+Edited 4 files
+Edited 4 files
+The root cause was overflow: hidden on the cards — browsers can't apply backdrop-filter through a clipping context on the same element. Removing it lets the blur render properly against the background image. The rounded corners are now handled individually on the image boxes (top) and info boxes (bottom), so the cards still look fully rounded.
+
+Uploaded image
+1780415966704_Screenshot 2026-06-02 165837.png
+See this image. The bottom footer has a blur, yet the panels don't for the background for the text boxes. This is what I want replicated on the panels in the portfolio ad references pages.
+
+
+Thought process
+Thought process
+The blur needs to be applied directly to the text info boxes themselves — the card-level backdrop-filter is being blocked by the image box layered on top of it. I'll move the blur onto the info boxes directly, matching the footer's treatment.
+
+
+Edited 2 files
+Edited 2 files
+The blur and dark tint are now applied directly to the text boxes on both the portfolio and references panels, using the same rgba(8, 16, 32, 0.38) background and blur(24px) saturate(200%) as the footer. Refresh and it should match.
+
+Remove the darker hue from these panels, I liked the lighter version.
+
+
+Edited a file
+Edited a file
+Done — both info boxes are back to the lighter rgba(255, 255, 255, 0.10) tint while keeping the blur effect.
+
+include the following syntax in the css file to point to the background image
+
+url("images/beach_background.jpg");
+
+
+Edited a file
+Edited a file
+Done. Just make sure the beach_background.jpg file is placed inside an images folder at the root of your portfolio directory alongside index.html.
+
+With the site, incorporate UX/UI compatibility and site scalability for mobile devices. Currently the header page buttons break when the site is opened on mobile.
+
+
+Read 3 files
+Read 3 files
+Now I have the full picture. I'll overhaul the responsive section with a hamburger menu for mobile, proper breakpoints for tablet and mobile, and scalable typography and spacing throughout.
+
+
+Edited a file
+Edited a file
+Now add the hamburger button and mobile nav drawer to the HTML, and wire up the JS:
+
+
+Edited 2 files, read a file
+Edited 2 files, read a file
+Now add the hamburger logic to main.js:
+
+
+Edited a file
+Edited a file
+Here's what changed across the three files:
+
+Header — on mobile the nav buttons are hidden and replaced with a three-line hamburger button. Tapping it opens a full-screen frosted glass drawer with large, easy-to-tap nav links. Tapping any link or resizing back to desktop closes it automatically.
+
+Layout — added a tablet breakpoint at 900px where portfolio and reference grids drop to 2 columns before going single-column at 600px.
+
+Typography & spacing — hero text, page titles, buttons, and padding all scale fluidly with clamp() so nothing overflows on small screens.
+
+Did all 3 files change or do I just need to reupload one to github?
+
+All 3 files changed:
+
+index.html — hamburger button and mobile nav drawer added
+style.css — hamburger styles, mobile nav drawer styles, tablet and mobile breakpoints
+main.js — hamburger toggle logic and mobile nav functions
+You'll need to push all three to GitHub.
+
+
+
+
+
+Claude is AI and can make mistakes. Please double-check responses.
+Style · CSS
 /* =============================================
    ELIJAHZEAL PORTFOLIO — STYLES
    ============================================= */
-
+ 
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
+ 
 :root {
   --glass-bg: rgba(255, 255, 255, 0.12);
   --glass-border: rgba(255, 255, 255, 0.25);
@@ -19,11 +287,11 @@
   --accent2: #a78bfa;
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+ 
 html {
   scroll-behavior: smooth;
 }
-
+ 
 body {
   font-family: 'Inter', sans-serif;
   min-height: 100vh;
@@ -33,7 +301,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-
+ 
 /* Fixed full-page background shared by all sections */
 body::before {
   content: '';
@@ -42,7 +310,7 @@ body::before {
   z-index: -1;
   background: url("images/beach_background.jpg") center center / cover no-repeat;
 }
-
+ 
 /* =============================================
    LIQUID GLASS MIXIN
    ============================================= */
@@ -53,7 +321,7 @@ body::before {
   border: 1px solid var(--glass-border);
   box-shadow: var(--glass-shadow);
 }
-
+ 
 /* =============================================
    HEADER
    ============================================= */
@@ -76,7 +344,7 @@ body::before {
     inset 0 -1px 0 rgba(255,255,255,0.08);
   transition: background var(--transition), box-shadow var(--transition);
 }
-
+ 
 .glass-header:hover {
   background: rgba(255, 255, 255, 0.16);
   box-shadow:
@@ -84,14 +352,14 @@ body::before {
     inset 0 1px 0 rgba(255,255,255,0.38),
     inset 0 -1px 0 rgba(255,255,255,0.1);
 }
-
+ 
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 12px 24px;
 }
-
+ 
 .logo {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 1.4rem;
@@ -103,16 +371,16 @@ body::before {
   cursor: pointer;
   transition: opacity var(--transition);
 }
-
+ 
 .logo:hover {
   opacity: 0.8;
 }
-
+ 
 .nav-links {
   display: flex;
   gap: 8px;
 }
-
+ 
 .nav-btn {
   display: inline-block;
   padding: 8px 22px;
@@ -127,7 +395,7 @@ body::before {
   letter-spacing: 0.02em;
   cursor: pointer;
 }
-
+ 
 .nav-btn:hover {
   background: rgba(255,255,255,0.2);
   border-color: rgba(255,255,255,0.35);
@@ -135,7 +403,7 @@ body::before {
   transform: translateY(-1px);
   box-shadow: 0 4px 16px rgba(96, 212, 240, 0.2);
 }
-
+ 
 /* =============================================
    PAGES
    ============================================= */
@@ -145,14 +413,14 @@ body::before {
   min-height: 100vh;
   width: 100%;
 }
-
+ 
 .page.active {
   display: flex;
   flex: 1;
   align-items: center;
   justify-content: center;
 }
-
+ 
 /* Per-page overlay (image comes from body::before) */
 .hero-bg {
   position: absolute;
@@ -160,11 +428,11 @@ body::before {
   z-index: 0;
   pointer-events: none;
 }
-
+ 
 .bg-img {
   display: none; /* image is handled by the fixed body::before */
 }
-
+ 
 .bg-overlay {
   position: absolute;
   inset: 0;
@@ -174,7 +442,7 @@ body::before {
     rgba(5, 15, 30, 0.55) 100%
   );
 }
-
+ 
 /* =============================================
    HERO CONTENT
    ============================================= */
@@ -185,12 +453,12 @@ body::before {
   padding: 0 24px;
   animation: fadeUp 0.9s ease both;
 }
-
+ 
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(28px); }
   to   { opacity: 1; transform: translateY(0); }
 }
-
+ 
 .hero-heading {
   font-family: 'Space Grotesk', sans-serif;
   font-size: clamp(3.5rem, 9vw, 8rem);
@@ -203,7 +471,7 @@ body::before {
     0 4px 24px rgba(0,0,0,0.4);
   margin-bottom: 0.2em;
 }
-
+ 
 .hero-subheading {
   font-family: 'Space Grotesk', sans-serif;
   font-size: clamp(1.2rem, 3.5vw, 2.2rem);
@@ -214,7 +482,7 @@ body::before {
   margin-bottom: 1rem;
   text-shadow: 0 2px 12px rgba(0,0,0,0.3);
 }
-
+ 
 .hero-tagline {
   font-size: 1rem;
   font-weight: 300;
@@ -223,7 +491,7 @@ body::before {
   text-transform: uppercase;
   margin-bottom: 2.5rem;
 }
-
+ 
 .cta-btn {
   display: inline-block;
   padding: 14px 38px;
@@ -243,7 +511,7 @@ body::before {
   cursor: pointer;
   transition: all var(--transition);
 }
-
+ 
 .cta-btn:hover {
   background: rgba(255,255,255,0.22);
   border-color: rgba(255,255,255,0.5);
@@ -252,7 +520,7 @@ body::before {
     0 8px 30px rgba(96,212,240,0.3),
     inset 0 1px 0 rgba(255,255,255,0.35);
 }
-
+ 
 /* =============================================
    INNER PAGE CONTENT
    ============================================= */
@@ -263,7 +531,7 @@ body::before {
   padding: 0 24px;
   animation: fadeUp 0.6s ease both;
 }
-
+ 
 .page-title {
   font-family: 'Space Grotesk', sans-serif;
   font-size: clamp(2.5rem, 6vw, 5rem);
@@ -272,13 +540,13 @@ body::before {
   text-shadow: 0 4px 20px rgba(0,0,0,0.4);
   margin-bottom: 1rem;
 }
-
+ 
 .page-placeholder {
   font-size: 1.1rem;
   color: rgba(255,255,255,0.5);
   letter-spacing: 0.08em;
 }
-
+ 
 /* =============================================
    REFERENCES PAGE
    ============================================= */
@@ -292,14 +560,14 @@ body::before {
   text-align: center;
   animation: fadeUp 0.7s ease both;
 }
-
+ 
 .references-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   align-items: start;
 }
-
+ 
 /* Reference Card */
 .ref-card {
   display: flex;
@@ -315,7 +583,7 @@ body::before {
     inset 0 -1px 0 rgba(255,255,255,0.06);
   transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
 }
-
+ 
 .ref-card:hover {
   transform: translateY(-6px);
   background: rgba(8, 16, 32, 0.52);
@@ -324,7 +592,7 @@ body::before {
     inset 0 1px 0 rgba(255,255,255,0.28),
     inset 0 -1px 0 rgba(255,255,255,0.08);
 }
-
+ 
 /* Image box */
 .ref-image-box {
   width: 100%;
@@ -334,7 +602,7 @@ body::before {
   background: rgba(255,255,255,0.06);
   border-bottom: 1px solid rgba(255,255,255,0.12);
 }
-
+ 
 .ref-image-box img {
   width: 100%;
   height: 100%;
@@ -343,11 +611,11 @@ body::before {
   display: block;
   transition: transform 0.5s ease;
 }
-
+ 
 .ref-card:hover .ref-image-box img {
   transform: scale(1.04);
 }
-
+ 
 .ref-img-placeholder {
   width: 100%;
   height: 100%;
@@ -356,14 +624,14 @@ body::before {
   justify-content: center;
   background: linear-gradient(135deg, rgba(96,212,240,0.08), rgba(167,139,250,0.08));
 }
-
+ 
 .ref-img-placeholder span {
   font-size: 0.8rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: rgba(255,255,255,0.3);
 }
-
+ 
 /* Info box */
 .ref-info-box {
   padding: 22px 22px 28px;
@@ -377,14 +645,14 @@ body::before {
   border-radius: 0 0 22px 22px;
   border-top: 1px solid rgba(255,255,255,0.12);
 }
-
+ 
 .ref-name {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 1.05rem;
   font-weight: 600;
   color: white;
 }
-
+ 
 .ref-role {
   font-size: 0.78rem;
   font-weight: 500;
@@ -393,7 +661,7 @@ body::before {
   color: var(--accent);
   margin-bottom: 4px;
 }
-
+ 
 .ref-desc {
   font-size: 0.88rem;
   line-height: 1.7;
@@ -402,7 +670,7 @@ body::before {
   overflow-wrap: break-word;
   word-break: break-word;
 }
-
+ 
 /* =============================================
    FOOTER
    ============================================= */
@@ -419,7 +687,7 @@ body::before {
     inset 0 -1px 0 rgba(255,255,255,0.06);
   transition: background var(--transition), box-shadow var(--transition);
 }
-
+ 
 .footer-inner {
   max-width: 1100px;
   margin: 0 auto;
@@ -429,7 +697,7 @@ body::before {
   align-items: center;
   gap: 36px;
 }
-
+ 
 /* Footer Nav Links */
 .footer-links {
   display: flex;
@@ -437,7 +705,7 @@ body::before {
   justify-content: center;
   flex-wrap: wrap;
 }
-
+ 
 .footer-col h4 {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 0.75rem;
@@ -447,14 +715,14 @@ body::before {
   color: var(--accent);
   margin-bottom: 14px;
 }
-
+ 
 .footer-col ul {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-
+ 
 .footer-col ul li a {
   font-size: 0.9rem;
   color: rgba(255,255,255,0.65);
@@ -462,17 +730,17 @@ body::before {
   transition: color var(--transition);
   cursor: pointer;
 }
-
+ 
 .footer-col ul li a:hover {
   color: white;
 }
-
+ 
 /* Social Icons */
 .footer-socials {
   display: flex;
   gap: 14px;
 }
-
+ 
 .social-icon {
   display: flex;
   align-items: center;
@@ -491,12 +759,12 @@ body::before {
     inset 0 1px 0 rgba(255,255,255,0.22);
   transition: all var(--transition);
 }
-
+ 
 .social-icon svg {
   width: 20px;
   height: 20px;
 }
-
+ 
 .social-icon:hover {
   background: rgba(255,255,255,0.2);
   border-color: rgba(255,255,255,0.4);
@@ -506,7 +774,7 @@ body::before {
     0 8px 24px rgba(96,212,240,0.25),
     inset 0 1px 0 rgba(255,255,255,0.35);
 }
-
+ 
 /* Copyright */
 .footer-copy {
   text-align: center;
@@ -514,13 +782,13 @@ body::before {
   padding-top: 20px;
   width: 100%;
 }
-
+ 
 .footer-copy p {
   font-size: 0.8rem;
   color: rgba(255,255,255,0.35);
   letter-spacing: 0.04em;
 }
-
+ 
 /* =============================================
    PORTFOLIO PAGE
    ============================================= */
@@ -534,7 +802,7 @@ body::before {
   text-align: center;
   animation: fadeUp 0.7s ease both;
 }
-
+ 
 .portfolio-subtitle {
   font-size: 0.95rem;
   letter-spacing: 0.18em;
@@ -543,7 +811,7 @@ body::before {
   margin-top: -0.5rem;
   margin-bottom: 3rem;
 }
-
+ 
 /* Grid */
 .portfolio-grid {
   display: grid;
@@ -551,7 +819,7 @@ body::before {
   gap: 24px;
   align-items: start;
 }
-
+ 
 /* Card */
 .portfolio-card {
   display: flex;
@@ -567,7 +835,7 @@ body::before {
     inset 0 -1px 0 rgba(255,255,255,0.06);
   transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
 }
-
+ 
 .portfolio-card:hover {
   transform: translateY(-6px);
   background: rgba(8, 16, 32, 0.52);
@@ -576,7 +844,7 @@ body::before {
     inset 0 1px 0 rgba(255,255,255,0.28),
     inset 0 -1px 0 rgba(255,255,255,0.08);
 }
-
+ 
 /* Image box */
 .card-image-box {
   width: 100%;
@@ -586,7 +854,7 @@ body::before {
   background: rgba(255,255,255,0.06);
   border-bottom: 1px solid rgba(255,255,255,0.12);
 }
-
+ 
 .card-image-box img {
   width: 100%;
   height: 100%;
@@ -594,11 +862,11 @@ body::before {
   display: block;
   transition: transform 0.5s ease;
 }
-
+ 
 .portfolio-card:hover .card-image-box img {
   transform: scale(1.04);
 }
-
+ 
 /* Placeholder shown when no image is set */
 .card-img-placeholder {
   width: 100%;
@@ -608,14 +876,14 @@ body::before {
   justify-content: center;
   background: linear-gradient(135deg, rgba(96,212,240,0.1), rgba(167,139,250,0.1));
 }
-
+ 
 .card-img-placeholder span {
   font-size: 0.8rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: rgba(255,255,255,0.3);
 }
-
+ 
 /* Info box */
 .card-info-box {
   padding: 22px 22px 26px;
@@ -629,7 +897,7 @@ body::before {
   border-radius: 0 0 22px 22px;
   border-top: 1px solid rgba(255,255,255,0.12);
 }
-
+ 
 .card-title {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 1.1rem;
@@ -637,13 +905,13 @@ body::before {
   color: white;
   letter-spacing: 0.01em;
 }
-
+ 
 .card-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
 }
-
+ 
 .tag {
   display: inline-block;
   padding: 3px 11px;
@@ -656,13 +924,13 @@ body::before {
   background: rgba(255,255,255,0.1);
   border: 1px solid rgba(255,255,255,0.18);
 }
-
+ 
 .card-desc {
   font-size: 0.88rem;
   line-height: 1.65;
   color: rgba(255,255,255,0.62);
 }
-
+ 
 .card-link {
   display: inline-block;
   margin-top: 4px;
@@ -673,46 +941,197 @@ body::before {
   text-decoration: none;
   transition: color var(--transition), letter-spacing var(--transition);
 }
-
+ 
 .card-link:hover {
   color: white;
   letter-spacing: 0.07em;
 }
-
+ 
 /* =============================================
-   RESPONSIVE
+   HAMBURGER MENU
+   ============================================= */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 50px;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.08);
+  cursor: pointer;
+  z-index: 1100;
+  transition: background var(--transition);
+}
+ 
+.hamburger:hover {
+  background: rgba(255,255,255,0.18);
+}
+ 
+.hamburger span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: white;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+ 
+/* Animate to X when open */
+.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+ 
+/* Mobile nav drawer */
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  background: rgba(8, 16, 32, 0.75);
+  backdrop-filter: blur(28px) saturate(200%);
+  -webkit-backdrop-filter: blur(28px) saturate(200%);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+ 
+.mobile-nav.open {
+  opacity: 1;
+  pointer-events: all;
+}
+ 
+.mobile-nav a {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: color var(--transition), letter-spacing var(--transition);
+}
+ 
+.mobile-nav a:hover {
+  color: white;
+  letter-spacing: 0.1em;
+}
+ 
+/* =============================================
+   RESPONSIVE — TABLET (max 900px)
+   ============================================= */
+@media (max-width: 900px) {
+  .portfolio-grid,
+  .references-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+ 
+  .portfolio-content,
+  .references-content {
+    padding: 110px 24px 60px;
+  }
+}
+ 
+/* =============================================
+   RESPONSIVE — MOBILE (max 600px)
    ============================================= */
 @media (max-width: 600px) {
+ 
+  /* Header — show hamburger, hide desktop nav */
   .glass-header {
     top: 12px;
     width: calc(100% - 24px);
+    border-radius: 50px;
   }
-
-  .nav-btn {
-    padding: 7px 14px;
-    font-size: 0.82rem;
+ 
+  .nav-links {
+    display: none;
   }
-
-  .footer-links {
-    gap: 32px;
+ 
+  .hamburger {
+    display: flex;
   }
-
-  .footer-socials {
-    gap: 10px;
+ 
+  /* Mobile nav drawer shown via JS */
+  .mobile-nav {
+    display: flex;
   }
-
-  .social-icon {
-    width: 42px;
-    height: 42px;
+ 
+  /* Logo size */
+  .logo {
+    font-size: 1.1rem;
   }
-
+ 
+  /* Hero text */
+  .hero-heading {
+    font-size: clamp(2.8rem, 14vw, 5rem);
+  }
+ 
+  .hero-subheading {
+    font-size: clamp(0.9rem, 4vw, 1.4rem);
+    letter-spacing: 0.08em;
+  }
+ 
+  .hero-tagline {
+    font-size: 0.8rem;
+  }
+ 
+  .cta-btn {
+    padding: 12px 28px;
+    font-size: 0.88rem;
+  }
+ 
+  /* Page titles */
+  .page-title {
+    font-size: clamp(2rem, 10vw, 3.5rem);
+  }
+ 
+  /* Cards — single column */
   .portfolio-grid,
   .references-grid {
     grid-template-columns: 1fr;
   }
-
+ 
   .portfolio-content,
   .references-content {
-    padding: 100px 20px 60px;
+    padding: 90px 16px 56px;
+  }
+ 
+  /* Footer */
+  .footer-inner {
+    padding: 36px 20px 24px;
+    gap: 28px;
+  }
+ 
+  .footer-links {
+    gap: 32px;
+  }
+ 
+  .footer-socials {
+    gap: 10px;
+  }
+ 
+  .social-icon {
+    width: 42px;
+    height: 42px;
+  }
+ 
+  .social-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+ 
+  .footer-copy p {
+    font-size: 0.72rem;
   }
 }
+ 
+
