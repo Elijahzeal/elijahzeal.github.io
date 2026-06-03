@@ -1,13 +1,13 @@
 /* =============================================
    ELIJAHZEAL PORTFOLIO — STYLES
    ============================================= */
- 
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
- 
+
 :root {
   --glass-bg: rgba(255, 255, 255, 0.12);
   --glass-border: rgba(255, 255, 255, 0.25);
@@ -19,11 +19,11 @@
   --accent2: #a78bfa;
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
- 
+
 html {
   scroll-behavior: smooth;
 }
- 
+
 body {
   font-family: 'Inter', sans-serif;
   min-height: 100vh;
@@ -33,7 +33,7 @@ body {
   display: flex;
   flex-direction: column;
 }
- 
+
 /* Fixed full-page background shared by all sections */
 body::before {
   content: '';
@@ -42,7 +42,7 @@ body::before {
   z-index: -1;
   background: url("images/beach_background.jpg") center center / cover no-repeat;
 }
- 
+
 /* =============================================
    LIQUID GLASS MIXIN
    ============================================= */
@@ -53,7 +53,7 @@ body::before {
   border: 1px solid var(--glass-border);
   box-shadow: var(--glass-shadow);
 }
- 
+
 /* =============================================
    HEADER
    ============================================= */
@@ -76,7 +76,7 @@ body::before {
     inset 0 -1px 0 rgba(255,255,255,0.08);
   transition: background var(--transition), box-shadow var(--transition);
 }
- 
+
 .glass-header:hover {
   background: rgba(255, 255, 255, 0.16);
   box-shadow:
@@ -84,14 +84,14 @@ body::before {
     inset 0 1px 0 rgba(255,255,255,0.38),
     inset 0 -1px 0 rgba(255,255,255,0.1);
 }
- 
+
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 12px 24px;
 }
- 
+
 .logo {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 1.4rem;
@@ -103,16 +103,16 @@ body::before {
   cursor: pointer;
   transition: opacity var(--transition);
 }
- 
+
 .logo:hover {
   opacity: 0.8;
 }
- 
+
 .nav-links {
   display: flex;
   gap: 8px;
 }
- 
+
 .nav-btn {
   display: inline-block;
   padding: 8px 22px;
@@ -127,7 +127,7 @@ body::before {
   letter-spacing: 0.02em;
   cursor: pointer;
 }
- 
+
 .nav-btn:hover {
   background: rgba(255,255,255,0.2);
   border-color: rgba(255,255,255,0.35);
@@ -135,7 +135,7 @@ body::before {
   transform: translateY(-1px);
   box-shadow: 0 4px 16px rgba(96, 212, 240, 0.2);
 }
- 
+
 /* =============================================
    PAGES
    ============================================= */
@@ -145,14 +145,14 @@ body::before {
   min-height: 100vh;
   width: 100%;
 }
- 
+
 .page.active {
   display: flex;
   flex: 1;
   align-items: center;
   justify-content: center;
 }
- 
+
 /* Per-page overlay (image comes from body::before) */
 .hero-bg {
   position: absolute;
@@ -160,11 +160,11 @@ body::before {
   z-index: 0;
   pointer-events: none;
 }
- 
+
 .bg-img {
   display: none; /* image is handled by the fixed body::before */
 }
- 
+
 .bg-overlay {
   position: absolute;
   inset: 0;
@@ -174,7 +174,7 @@ body::before {
     rgba(5, 15, 30, 0.55) 100%
   );
 }
- 
+
 /* =============================================
    HERO CONTENT
    ============================================= */
@@ -185,12 +185,12 @@ body::before {
   padding: 0 24px;
   animation: fadeUp 0.9s ease both;
 }
- 
+
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(28px); }
   to   { opacity: 1; transform: translateY(0); }
 }
- 
+
 .hero-heading {
   font-family: 'Space Grotesk', sans-serif;
   font-size: clamp(3.5rem, 9vw, 8rem);
@@ -203,7 +203,7 @@ body::before {
     0 4px 24px rgba(0,0,0,0.4);
   margin-bottom: 0.2em;
 }
- 
+
 .hero-subheading {
   font-family: 'Space Grotesk', sans-serif;
   font-size: clamp(1.2rem, 3.5vw, 2.2rem);
@@ -214,7 +214,7 @@ body::before {
   margin-bottom: 1rem;
   text-shadow: 0 2px 12px rgba(0,0,0,0.3);
 }
- 
+
 .hero-tagline {
   font-size: 1rem;
   font-weight: 300;
@@ -223,7 +223,7 @@ body::before {
   text-transform: uppercase;
   margin-bottom: 2.5rem;
 }
- 
+
 .cta-btn {
   display: inline-block;
   padding: 14px 38px;
@@ -243,7 +243,7 @@ body::before {
   cursor: pointer;
   transition: all var(--transition);
 }
- 
+
 .cta-btn:hover {
   background: rgba(255,255,255,0.22);
   border-color: rgba(255,255,255,0.5);
@@ -252,7 +252,7 @@ body::before {
     0 8px 30px rgba(96,212,240,0.3),
     inset 0 1px 0 rgba(255,255,255,0.35);
 }
- 
+
 /* =============================================
    INNER PAGE CONTENT
    ============================================= */
@@ -263,7 +263,7 @@ body::before {
   padding: 0 24px;
   animation: fadeUp 0.6s ease both;
 }
- 
+
 .page-title {
   font-family: 'Space Grotesk', sans-serif;
   font-size: clamp(2.5rem, 6vw, 5rem);
@@ -272,13 +272,13 @@ body::before {
   text-shadow: 0 4px 20px rgba(0,0,0,0.4);
   margin-bottom: 1rem;
 }
- 
+
 .page-placeholder {
   font-size: 1.1rem;
   color: rgba(255,255,255,0.5);
   letter-spacing: 0.08em;
 }
- 
+
 /* =============================================
    REFERENCES PAGE
    ============================================= */
@@ -292,14 +292,14 @@ body::before {
   text-align: center;
   animation: fadeUp 0.7s ease both;
 }
- 
+
 .references-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
   align-items: start;
 }
- 
+
 /* Reference Card */
 .ref-card {
   display: flex;
@@ -313,7 +313,7 @@ body::before {
     inset 0 -1px 0 rgba(255,255,255,0.06);
   transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
 }
- 
+
 .ref-card:hover {
   transform: translateY(-6px);
   background: rgba(8, 16, 32, 0.52);
@@ -322,7 +322,7 @@ body::before {
     inset 0 1px 0 rgba(255,255,255,0.28),
     inset 0 -1px 0 rgba(255,255,255,0.08);
 }
- 
+
 /* Image box */
 .ref-image-box {
   width: 100%;
@@ -332,7 +332,7 @@ body::before {
   background: rgba(255,255,255,0.06);
   border-bottom: 1px solid rgba(255,255,255,0.12);
 }
- 
+
 .ref-image-box img {
   width: 100%;
   height: 100%;
@@ -341,11 +341,11 @@ body::before {
   display: block;
   transition: transform 0.5s ease;
 }
- 
+
 .ref-card:hover .ref-image-box img {
   transform: scale(1.04);
 }
- 
+
 .ref-img-placeholder {
   width: 100%;
   height: 100%;
@@ -354,14 +354,14 @@ body::before {
   justify-content: center;
   background: linear-gradient(135deg, rgba(96,212,240,0.08), rgba(167,139,250,0.08));
 }
- 
+
 .ref-img-placeholder span {
   font-size: 0.8rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: rgba(255,255,255,0.3);
 }
- 
+
 /* Info box */
 .ref-info-box {
   padding: 22px 22px 28px;
@@ -375,14 +375,14 @@ body::before {
   border-radius: 0 0 22px 22px;
   border-top: 1px solid rgba(255,255,255,0.12);
 }
- 
+
 .ref-name {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 1.05rem;
   font-weight: 600;
   color: white;
 }
- 
+
 .ref-role {
   font-size: 0.78rem;
   font-weight: 500;
@@ -391,7 +391,7 @@ body::before {
   color: var(--accent);
   margin-bottom: 4px;
 }
- 
+
 .ref-desc {
   font-size: 0.88rem;
   line-height: 1.7;
@@ -400,7 +400,7 @@ body::before {
   overflow-wrap: break-word;
   word-break: break-word;
 }
- 
+
 /* =============================================
    FOOTER
    ============================================= */
@@ -417,7 +417,7 @@ body::before {
     inset 0 -1px 0 rgba(255,255,255,0.06);
   transition: background var(--transition), box-shadow var(--transition);
 }
- 
+
 .footer-inner {
   max-width: 1100px;
   margin: 0 auto;
@@ -427,7 +427,7 @@ body::before {
   align-items: center;
   gap: 36px;
 }
- 
+
 /* Footer Nav Links */
 .footer-links {
   display: flex;
@@ -435,7 +435,7 @@ body::before {
   justify-content: center;
   flex-wrap: wrap;
 }
- 
+
 .footer-col h4 {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 0.75rem;
@@ -445,14 +445,14 @@ body::before {
   color: var(--accent);
   margin-bottom: 14px;
 }
- 
+
 .footer-col ul {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
- 
+
 .footer-col ul li a {
   font-size: 0.9rem;
   color: rgba(255,255,255,0.65);
@@ -460,17 +460,17 @@ body::before {
   transition: color var(--transition);
   cursor: pointer;
 }
- 
+
 .footer-col ul li a:hover {
   color: white;
 }
- 
+
 /* Social Icons */
 .footer-socials {
   display: flex;
   gap: 14px;
 }
- 
+
 .social-icon {
   display: flex;
   align-items: center;
@@ -489,12 +489,12 @@ body::before {
     inset 0 1px 0 rgba(255,255,255,0.22);
   transition: all var(--transition);
 }
- 
+
 .social-icon svg {
   width: 20px;
   height: 20px;
 }
- 
+
 .social-icon:hover {
   background: rgba(255,255,255,0.2);
   border-color: rgba(255,255,255,0.4);
@@ -504,7 +504,7 @@ body::before {
     0 8px 24px rgba(96,212,240,0.25),
     inset 0 1px 0 rgba(255,255,255,0.35);
 }
- 
+
 /* Copyright */
 .footer-copy {
   text-align: center;
@@ -512,13 +512,13 @@ body::before {
   padding-top: 20px;
   width: 100%;
 }
- 
+
 .footer-copy p {
   font-size: 0.8rem;
   color: rgba(255,255,255,0.35);
   letter-spacing: 0.04em;
 }
- 
+
 /* =============================================
    PORTFOLIO PAGE
    ============================================= */
@@ -532,7 +532,7 @@ body::before {
   text-align: center;
   animation: fadeUp 0.7s ease both;
 }
- 
+
 .portfolio-subtitle {
   font-size: 0.95rem;
   letter-spacing: 0.18em;
@@ -541,7 +541,7 @@ body::before {
   margin-top: -0.5rem;
   margin-bottom: 3rem;
 }
- 
+
 /* Grid */
 .portfolio-grid {
   display: grid;
@@ -549,7 +549,7 @@ body::before {
   gap: 24px;
   align-items: start;
 }
- 
+
 /* Card */
 .portfolio-card {
   display: flex;
@@ -563,7 +563,7 @@ body::before {
     inset 0 -1px 0 rgba(255,255,255,0.06);
   transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
 }
- 
+
 .portfolio-card:hover {
   transform: translateY(-6px);
   background: rgba(8, 16, 32, 0.52);
@@ -572,7 +572,7 @@ body::before {
     inset 0 1px 0 rgba(255,255,255,0.28),
     inset 0 -1px 0 rgba(255,255,255,0.08);
 }
- 
+
 /* Image box */
 .card-image-box {
   width: 100%;
@@ -582,7 +582,7 @@ body::before {
   background: rgba(255,255,255,0.06);
   border-bottom: 1px solid rgba(255,255,255,0.12);
 }
- 
+
 .card-image-box img {
   width: 100%;
   height: 100%;
@@ -590,11 +590,11 @@ body::before {
   display: block;
   transition: transform 0.5s ease;
 }
- 
+
 .portfolio-card:hover .card-image-box img {
   transform: scale(1.04);
 }
- 
+
 /* Placeholder shown when no image is set */
 .card-img-placeholder {
   width: 100%;
@@ -604,14 +604,14 @@ body::before {
   justify-content: center;
   background: linear-gradient(135deg, rgba(96,212,240,0.1), rgba(167,139,250,0.1));
 }
- 
+
 .card-img-placeholder span {
   font-size: 0.8rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: rgba(255,255,255,0.3);
 }
- 
+
 /* Info box */
 .card-info-box {
   padding: 22px 22px 26px;
@@ -625,7 +625,7 @@ body::before {
   border-radius: 0 0 22px 22px;
   border-top: 1px solid rgba(255,255,255,0.12);
 }
- 
+
 .card-title {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 1.1rem;
@@ -633,13 +633,13 @@ body::before {
   color: white;
   letter-spacing: 0.01em;
 }
- 
+
 .card-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
 }
- 
+
 .tag {
   display: inline-block;
   padding: 3px 11px;
@@ -652,13 +652,13 @@ body::before {
   background: rgba(255,255,255,0.1);
   border: 1px solid rgba(255,255,255,0.18);
 }
- 
+
 .card-desc {
   font-size: 0.88rem;
   line-height: 1.65;
   color: rgba(255,255,255,0.62);
 }
- 
+
 .card-link {
   display: inline-block;
   margin-top: 4px;
@@ -669,12 +669,12 @@ body::before {
   text-decoration: none;
   transition: color var(--transition), letter-spacing var(--transition);
 }
- 
+
 .card-link:hover {
   color: white;
   letter-spacing: 0.07em;
 }
- 
+
 /* =============================================
    PROJECT DETAIL PAGE
    ============================================= */
@@ -683,7 +683,7 @@ body::before {
   display: flex;
   flex-direction: column;
 }
- 
+
 .project-content {
   position: relative;
   z-index: 1;
@@ -693,7 +693,7 @@ body::before {
   justify-content: center;
   padding: 120px 24px 80px;
 }
- 
+
 .project-panel {
   width: 100%;
   max-width: 860px;
@@ -706,7 +706,7 @@ body::before {
   overflow: hidden;
   animation: fadeUp 0.7s ease both;
 }
- 
+
 /* Panel image */
 .project-panel-image {
   width: 100%;
@@ -716,14 +716,14 @@ body::before {
   background: rgba(255,255,255,0.06);
   border-bottom: 1px solid rgba(255,255,255,0.12);
 }
- 
+
 .project-panel-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
- 
+
 .project-img-placeholder {
   width: 100%;
   height: 100%;
@@ -732,33 +732,26 @@ body::before {
   justify-content: center;
   background: linear-gradient(135deg, rgba(96,212,240,0.08), rgba(167,139,250,0.08));
 }
- 
+
 .project-img-placeholder span {
   font-size: 0.8rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: rgba(255,255,255,0.3);
 }
- 
+
 /* Panel body */
 .project-panel-body {
   padding: 36px 40px 44px;
-  position: relative;
-  z-index: 1;
   background: rgba(8, 16, 32, 0.38);
   backdrop-filter: blur(24px) saturate(200%);
   -webkit-backdrop-filter: blur(24px) saturate(200%);
-  border-top: 1px solid rgba(255,255,255,0.22);
-  box-shadow:
-    0 -4px 32px rgba(0,0,0,0.18),
-    inset 0 1px 0 rgba(255,255,255,0.25),
-    inset 0 -1px 0 rgba(255,255,255,0.06);
   border-radius: 0 0 22px 22px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
- 
+
 .project-back {
   display: inline-flex;
   align-items: center;
@@ -772,12 +765,12 @@ body::before {
   transition: gap var(--transition), color var(--transition);
   margin-bottom: 4px;
 }
- 
+
 .project-back:hover {
   color: white;
   gap: 10px;
 }
- 
+
 .project-title {
   font-family: 'Space Grotesk', sans-serif;
   font-size: clamp(1.8rem, 4vw, 2.8rem);
@@ -786,20 +779,20 @@ body::before {
   letter-spacing: -0.01em;
   line-height: 1.15;
 }
- 
+
 .project-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
- 
+
 .project-desc {
   font-size: 0.95rem;
   line-height: 1.8;
   color: rgba(255,255,255,0.72);
   overflow-wrap: break-word;
 }
- 
+
 .project-link {
   display: inline-block;
   align-self: flex-start;
@@ -817,28 +810,28 @@ body::before {
   -webkit-backdrop-filter: blur(12px);
   transition: all var(--transition);
 }
- 
+
 .project-link:hover {
   background: rgba(255,255,255,0.20);
   border-color: rgba(255,255,255,0.4);
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(96,212,240,0.2);
 }
- 
+
 @media (max-width: 600px) {
   .project-content {
     padding: 90px 16px 56px;
   }
- 
+
   .project-panel-body {
     padding: 24px 20px 32px;
   }
- 
+
   .project-back {
     font-size: 0.78rem;
   }
 }
- 
+
 /* =============================================
    HAMBURGER MENU
    ============================================= */
@@ -857,11 +850,11 @@ body::before {
   z-index: 1100;
   transition: background var(--transition);
 }
- 
+
 .hamburger:hover {
   background: rgba(255,255,255,0.18);
 }
- 
+
 .hamburger span {
   display: block;
   height: 2px;
@@ -870,12 +863,12 @@ body::before {
   border-radius: 2px;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
- 
+
 /* Animate to X when open */
 .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
 .hamburger.open span:nth-child(2) { opacity: 0; }
 .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
- 
+
 /* Mobile nav drawer */
 .mobile-nav {
   display: none;
@@ -896,12 +889,12 @@ body::before {
   pointer-events: none;
   transition: opacity 0.3s ease;
 }
- 
+
 .mobile-nav.open {
   opacity: 1;
   pointer-events: all;
 }
- 
+
 .mobile-nav a {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 2rem;
@@ -911,12 +904,12 @@ body::before {
   letter-spacing: 0.05em;
   transition: color var(--transition), letter-spacing var(--transition);
 }
- 
+
 .mobile-nav a:hover {
   color: white;
   letter-spacing: 0.1em;
 }
- 
+
 /* =============================================
    RESPONSIVE — TABLET (max 900px)
    ============================================= */
@@ -925,104 +918,103 @@ body::before {
   .references-grid {
     grid-template-columns: repeat(2, 1fr);
   }
- 
+
   .portfolio-content,
   .references-content {
     padding: 110px 24px 60px;
   }
 }
- 
+
 /* =============================================
    RESPONSIVE — MOBILE (max 600px)
    ============================================= */
 @media (max-width: 600px) {
- 
+
   /* Header — show hamburger, hide desktop nav */
   .glass-header {
     top: 12px;
     width: calc(100% - 24px);
     border-radius: 50px;
   }
- 
+
   .nav-links {
     display: none;
   }
- 
+
   .hamburger {
     display: flex;
   }
- 
+
   /* Mobile nav drawer shown via JS */
   .mobile-nav {
     display: flex;
   }
- 
+
   /* Logo size */
   .logo {
     font-size: 1.1rem;
   }
- 
+
   /* Hero text */
   .hero-heading {
     font-size: clamp(2.8rem, 14vw, 5rem);
   }
- 
+
   .hero-subheading {
     font-size: clamp(0.9rem, 4vw, 1.4rem);
     letter-spacing: 0.08em;
   }
- 
+
   .hero-tagline {
     font-size: 0.8rem;
   }
- 
+
   .cta-btn {
     padding: 12px 28px;
     font-size: 0.88rem;
   }
- 
+
   /* Page titles */
   .page-title {
     font-size: clamp(2rem, 10vw, 3.5rem);
   }
- 
+
   /* Cards — single column */
   .portfolio-grid,
   .references-grid {
     grid-template-columns: 1fr;
   }
- 
+
   .portfolio-content,
   .references-content {
     padding: 90px 16px 56px;
   }
- 
+
   /* Footer */
   .footer-inner {
     padding: 36px 20px 24px;
     gap: 28px;
   }
- 
+
   .footer-links {
     gap: 32px;
   }
- 
+
   .footer-socials {
     gap: 10px;
   }
- 
+
   .social-icon {
     width: 42px;
     height: 42px;
   }
- 
+
   .social-icon svg {
     width: 18px;
     height: 18px;
   }
- 
+
   .footer-copy p {
     font-size: 0.72rem;
   }
 }
- 
